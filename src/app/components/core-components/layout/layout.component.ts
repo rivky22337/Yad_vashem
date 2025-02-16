@@ -23,7 +23,7 @@ export class LayoutComponent {
   #colorsAccessibilityService =inject(ColorsAccessibilityService);
   ngOnInit() {
 
-    this.#colorsAccessibilityService.resetColors();
+    this.#colorsAccessibilityService.setColors();
 
 
     this.subscription.add(

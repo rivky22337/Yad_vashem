@@ -1,13 +1,28 @@
 import { Component } from '@angular/core';
-import { TestBasicComponent } from '../basic-components/test-basic/test-basic.component';
+import { ButtonType } from 'src/app/enums/basic-enum';
+import { CommonModule } from '@angular/common';
+import { TempButtonComponent } from '../basic-components/temp-button/temp-button.component';
 
 @Component({
   selector: 'yv-cluster-test',
   standalone: true,
-  imports: [TestBasicComponent],
+  imports: [CommonModule, TempButtonComponent],
   templateUrl: './test.component.html',
   styleUrl: './test.component.scss'
 })
 export class TestComponent {
+
+  btnType = ButtonType.PRIMARY;
+  btnType2 = ButtonType.SECONDARY;
+  txt1 = "test btn1"
+  // txt1 = "test btn1"
+
+
+
+  onClick()
+  {
+    alert('test on click');
+    console.log('test on click');
+  }
 
 }

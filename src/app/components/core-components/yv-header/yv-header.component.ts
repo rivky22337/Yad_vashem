@@ -31,33 +31,4 @@ export class HeaderComponent {
       this.#router.navigateByUrl(newLang + '/home');
     }
   }
-  changeAccessibility(type: AccessibilityEnum) {
-    this.toggleAccessibility();
-    if(this.currentAccessibility==type){
-      return;
-    }
-    this.currentAccessibility =type;
-    switch (type) {
-      case AccessibilityEnum.HIGH_CONTRAST: {
-        this.#colorsAccessibilityService.blackOverWhite();
-        break;
-      }
-      case AccessibilityEnum.REVERSE_CONTRAST: {
-        this.#colorsAccessibilityService.yellowOverBlack();
-        break;
-      }
-      case AccessibilityEnum.NO_CSS: {
-        this.#colorsAccessibilityService.noCSS();
-        break;
-      }
-      case AccessibilityEnum.RESET: {
-        this.#colorsAccessibilityService.resetColors();
-        this.#colorsAccessibilityService.resetCss();
-        break;
-      }
-    }
-  }
-  toggleAccessibility(){
-    this.isShowAccessibility =!this.isShowAccessibility;
-  }
 }
