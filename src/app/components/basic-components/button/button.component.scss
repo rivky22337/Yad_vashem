@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "src/styles.scss";
 body {
   margin: 0;
@@ -11,13 +12,28 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+=======
+// // @import "src/styles.scss";
+.btn {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+>>>>>>> 6af9115a6ed1f55ebca487e33fd735214afeaf94
   cursor: pointer;
 }
 
 .primary {
   border-radius: var(--Border-radius-small, 0.25rem);
+<<<<<<< HEAD
   border: 1px solid $primary_btn;
   background: $primary_btn;
+=======
+  border: 1px solid #1334B9;
+  background: #1334B9;
+>>>>>>> 6af9115a6ed1f55ebca487e33fd735214afeaf94
   color: var(--main-on-primery, #FFF);
   text-align: center;
   font-family: Poppins;
@@ -28,7 +44,11 @@ body {
 
   &:hover {
     border-radius: var(--Border-radius-small, 4px);
+<<<<<<< HEAD
     border: 1px solid $primary_btn;
+=======
+    border: 1px solid #1334B9;
+>>>>>>> 6af9115a6ed1f55ebca487e33fd735214afeaf94
     background: #1334B9;
   }
   &:disabled {
@@ -50,7 +70,11 @@ body {
   flex-shrink: 0;
   border-radius: var(--Border-radius-small, 4px);
   border: 1px solid #A1AEE3;
+<<<<<<< HEAD
   background-color: white;
+=======
+  background-color:white;
+>>>>>>> 6af9115a6ed1f55ebca487e33fd735214afeaf94
 
   &:hover {
     border-radius: var(--Border-radius-small, 4px);
@@ -63,12 +87,20 @@ body {
     border: 1px solid var(--main-on-desabled, #A5B1C0);
     background: var(--main-surf-desabled-container, #ffffff);
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6af9115a6ed1f55ebca487e33fd735214afeaf94
 }
 
 .tertiary {
   border: 0px solid #1334B9;
   color: var(--Primery, #1334B9);
+<<<<<<< HEAD
   background-color: white;
+=======
+  background-color:white;
+>>>>>>> 6af9115a6ed1f55ebca487e33fd735214afeaf94
 
   &:hover {
     border-radius: var(--Border-radius-small, 4px);
@@ -89,14 +121,30 @@ body {
 }
 
 .big-btn {
+<<<<<<< HEAD
   display: inline-flex;
   height: var(--Layout-10, 40px);
   padding: var(--Layout-x-large, 16px) var(--Layout-2x-large, 24px);
+=======
+display: inline-flex;
+height: var(--Layout-10, 40px);
+padding: var(--Layout-x-large, 16px) var(--Layout-2x-large, 24px);
+justify-content: center;
+align-items: center;
+gap: var(--Layout-medium, 8px);
+flex-shrink: 0;
+}
+.small-btn {
+  display: inline-flex;
+  height: var(--Layout-09, 36px);
+  padding: 6px var(--Layout-x-large, 16px);
+>>>>>>> 6af9115a6ed1f55ebca487e33fd735214afeaf94
   justify-content: center;
   align-items: center;
   gap: var(--Layout-medium, 8px);
   flex-shrink: 0;
 }
+<<<<<<< HEAD
 
 .small-btn {
   display: inline-flex;
@@ -106,6 +154,23 @@ body {
   align-items: center;
   gap: var(--Layout-medium, 8px);
   flex-shrink: 0;
+=======
+.icon{
+font-family: "Font Awesome 6 Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.variant1{
+  color: var(--Primery, #1334B9);
+}
+.variant2{
+  color: var(--main-on-desabled, #A5B1C0);
+}
+.variant3{
+  color: var(--main-on-desabled, #ffffff);
+>>>>>>> 6af9115a6ed1f55ebca487e33fd735214afeaf94
 }
 
 .icon {
