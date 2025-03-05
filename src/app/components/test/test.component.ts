@@ -1,28 +1,31 @@
 import { Component } from '@angular/core';
-import { ButtonType } from 'src/app/enums/basic-enum';
+import { ButtonComponent } from '../basic-components/button/button.component';
+import { ButtonIconProperty, ButtonType,SquareIconButtonIcon } from '../../enums/basic-enum';
 import { CommonModule } from '@angular/common';
-import { TempButtonComponent } from '../basic-components/temp-button/temp-button.component';
+import { BasicSquareIconButtonComponent } from '../basic-components/basic-square-icon-button/basic-square-icon-button.component';
+import { CompareModalButtonComponent } from '../basic-components/compare-modal-button/compare-modal-button.component';
 
 @Component({
-  selector: 'yv-cluster-test',
+  selector: 'app-test',
+  imports: [CommonModule, ButtonComponent,BasicSquareIconButtonComponent,CompareModalButtonComponent],
   standalone: true,
-  imports: [CommonModule, TempButtonComponent],
   templateUrl: './test.component.html',
-  styleUrl: './test.component.scss'
+  styleUrls: ['./test.component.css'],
+
+
 })
 export class TestComponent {
-
-  btnType = ButtonType.PRIMARY;
-  btnType2 = ButtonType.SECONDARY;
-  txt1 = "test btn1"
-  // txt1 = "test btn1"
-
-
+  primary = ButtonType.PRIMARY
+  secondary = ButtonType.SECONDARY
+  tertiany = ButtonType.TERTIARY
+  variant1=ButtonIconProperty.VARIANT1
+  variant2=ButtonIconProperty.VARIANT2
+  variant3=ButtonIconProperty.VARIANT3
+  list=SquareIconButtonIcon.LIST
+  image=SquareIconButtonIcon.IMAGE
 
   onClick()
   {
     alert('test on click');
-    console.log('test on click');
   }
-
 }
